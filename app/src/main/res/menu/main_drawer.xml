@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/main_drawer_received_box"
+        android:icon="@drawable/ic_received"
+        android:checkable="true"
+        android:title="@string/received_messages"/>
+    <item
+        android:id="@+id/main_drawer_sent_box"
+        android:icon="@drawable/ic_sent"
+        android:checkable="true"
+        android:title="@string/sent_messages"/>
+    <item
+        android:id="@+id/main_drawer_about"
+        android:icon="@drawable/ic_about"
+        android:checkable="false"
+        android:title="@string/about"/>
+</menu>

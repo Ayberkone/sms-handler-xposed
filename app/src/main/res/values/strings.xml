@@ -1,0 +1,96 @@
+<resources>
+
+    <!-- General -->
+
+    <string name="app_name">Sms-Handler</string>
+    <string name="ok">OK</string>
+    <string name="delete">Delete</string>
+    <string name="edit">Edit</string>
+    <string name="enable">Enable</string>
+    <string name="reboot">Reboot</string>
+    <string name="about">About</string>
+    <string name="ignore">Ignore</string>
+    <string name="close">Close</string>
+    <string name="cancel">Cancel</string>
+    <string name="retry">Retry</string>
+    <string name="restore">Restore</string>
+    <string name="must_enable_xposed_module">Xposed module must be enabled</string>
+    <string name="undo">Undo</string>
+
+    <!-- Navigation drawer -->
+    <string name="open_drawer">Open navigation drawer</string>
+    <string name="close_drawer">Close navigation drawer</string>
+
+
+    <!-- Xposed Stuff -->
+
+    <string name="enable_xposed_module_title">Enable Xposed module</string>
+    <string name="module_outdated_message">Please reboot your device for changes to take effect.</string>
+    <string name="xposed_not_installed">Xposed not installed</string>
+    <string name="format_about_message">
+        <![CDATA[
+            SmsHandler for Android.<br><br>
+            <b>Developed by Ayberk Baytok</b><br><br>
+        ]]>
+    </string>
+    <string name="xposed_desc">SMSHandler</string>
+
+
+    <!-- Message Stuff -->
+
+    <string name="format_message_details">
+        <![CDATA[
+            <b>Sender</b><br>
+            %1$s<br><br>
+
+            <b>Time sent</b><br>
+            %2$s<br><br>
+
+            <b>Message body</b><br>
+            %3$s
+        ]]>
+    </string>
+    <string name="load_message_failed"> Message could not be loaded</string>
+    <string name="confirm_clear_messages_title">Delete all messages?</string>
+    <string name="confirm_clear_messages_message">Your messages will be gone.</string>
+    <string name="message_restored">Message restored to inbox</string>
+    <string name="message_delete_failed">Message could not be deleted</string>
+    <string name="message_restore_failed">Message could not be restored</string>
+    <string name="message_deleted">Message deleted</string>
+    <string name="cleared_received_messages">Deleted all received messages</string>
+    <string name="clear_sent_messages">Deleted all sent messages</string>
+    <string name="received_messages_empty_text">No received messages!</string>
+    <string name="message_actions">Message actions</string>
+    <string name="clear_received_messages">Clear received messages</string>
+    <string name="channel_received_messages">Received messages</string>
+    <string name="format_notification_single_sender">%s (received)</string>
+    <string name="format_notification_multi_count">%d received messages</string>
+    <string name="format_notification_multi_item"><![CDATA[<b>%1$s</b> %2$s]]></string>
+    <string name="sent_messages_empty_text">Sent Box is Empty!</string>
+
+
+    <!-- Drawer -->
+
+    <string name="received_messages">Received Box</string>
+    <string name="sent_messages">Sent Box</string>
+
+    <!-- Debug stuff -->
+    <string name="create_test_message">Create test message</string>
+
+    <!-- Task Killers -->
+
+    <string name="task_killer_title">Task killer apps detected</string>
+    <string name="task_killer_message">
+        The following apps have been detected on your device:\n\n%s\n
+        \nPlease whitelist NekoSMS, or else this app will not work!
+    </string>
+    <string name="task_killer_ok">I understand</string>
+
+
+    <!-- App shortcuts -->
+    <string name="shortcut_received">New blacklist rule</string>
+    <string name="shortcut_sent">New whitelist rule</string>
+    <string name="received_box">Received Box</string>
+    <string name="sent_box">Sent Box</string>
+</resources>
+

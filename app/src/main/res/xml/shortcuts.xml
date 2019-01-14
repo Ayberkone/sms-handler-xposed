@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shortcuts xmlns:android="http://schemas.android.com/apk/res/android">
+    <shortcut
+        android:shortcutId="view_received_messages"
+        android:enabled="true"
+        android:icon="@mipmap/ic_launcher"
+        android:shortcutShortLabel="@string/received_box">
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:targetPackage="xposed.ayberkbaytok.sms_handler"
+            android:targetClass="xposed.ayberkbaytok.sms_handler.app.MainActivity">
+            <extra android:name="section" android:value="received_messages"/>
+        </intent>
+    </shortcut>
+    <shortcut
+        android:shortcutId="create_received"
+        android:enabled="true"
+        android:icon="@drawable/ic_received"
+        android:shortcutShortLabel="@string/sent_box">
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:targetPackage="xposed.ayberkbaytok.sms_handler"
+            android:targetClass="xposed.ayberkbaytok.sms_handler.app.FilterEditorActivity">
+            <extra android:name="action" android:value="allow"/>
+        </intent>
+    </shortcut>
+    <shortcut
+        android:shortcutId="create_sent"
+        android:enabled="true"
+        android:icon="@drawable/ic_sent"
+        android:shortcutShortLabel="@string/shortcut_sent">
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:targetPackage="xposed.ayberkbaytok.sms_handler"
+            android:targetClass="xposed.ayberkbaytok.sms_handler.app.FilterEditorActivity">
+            <extra android:name="action" android:value="block"/>
+        </intent>
+    </shortcut>
+</shortcuts>

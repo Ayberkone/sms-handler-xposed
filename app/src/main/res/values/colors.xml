@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item type="color" name="primary">#000</item>
+    <item type="color" name="primary_dark">#303f9f</item>
+    <item type="color" name="accent">#ff4081</item>
+    <item type="color" name="main">#4d6697</item>
+    <item type="color" name="shortcut_bg">#f5f5f5</item>
+    <item type="color" name="launcher_bg">#4d6697</item>
+</resources>

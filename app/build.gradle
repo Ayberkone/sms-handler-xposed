@@ -1,0 +1,49 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 26
+    defaultConfig {
+        applicationId "xposed.ayberkbaytok.sms_handler"
+        minSdkVersion 23
+        targetSdkVersion 26
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        buildConfigField('int', 'MODULE_VERSION', '15')
+        buildConfigField('int', 'DATABASE_VERSION', '11')
+        buildConfigField('String', 'LOG_TAG', '"SMSHandler"')
+
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            buildConfigField('int', 'LOG_LEVEL', '4')
+            buildConfigField('boolean', 'LOG_TO_XPOSED', 'true')
+        }
+        debug {
+            buildConfigField('int', 'LOG_LEVEL', '2')
+            buildConfigField('boolean', 'LOG_TO_XPOSED', 'false')
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'com.android.support:appcompat-v7:26.1.0'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.2'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+    implementation 'com.android.support:support-core-ui:26.1.0'
+    implementation 'com.android.support:recyclerview-v7:26.1.0'
+    implementation 'com.android.support:support-annotations:27.1.1'
+    implementation 'com.android.support:design:26.1.0'
+    implementation 'com.crossbowffs.remotepreferences:remotepreferences:0.5'
+    provided 'de.robv.android.xposed:api:82'
+    compile 'com.facebook.stetho:stetho-urlconnection:1.5.0'
+    compile 'com.google.code.gson:gson:2.8.5'
+  	compile 'com.squareup.okhttp3:okhttp:3.11.0'
+  	compile 'com.mindscapehq.android:raygun4android:3.0.6'
+
+}
+

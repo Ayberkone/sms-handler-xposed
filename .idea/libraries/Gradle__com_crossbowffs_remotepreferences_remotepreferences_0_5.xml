@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="Gradle: com.crossbowffs.remotepreferences:remotepreferences-0.5">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/remotepreferences-0.5.aar/6fb00c35ac97106d344e2d88839583ea/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/remotepreferences-0.5.aar/6fb00c35ac97106d344e2d88839583ea/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.crossbowffs.remotepreferences/remotepreferences/0.5/e4e73a7a33dd95762cf88c6fea2aeea6f716c8e1/remotepreferences-0.5-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
